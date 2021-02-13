@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rezervation_flat,rezervation.rezervation.flat,model_rezervation_flat,,1,1,1,1
+access_rezervation_amenity,rezervation.rezervation_amenity,model_rezervation_amenity,,1,1,1,1
+access_rezervation_user,rezervation.rezervation_user,model_rezervation_user,,1,1,1,1
+access_rezervation_city,rezervation.rezervation_city,model_rezervation_city,,1,1,1,1
+access_rezervation_country,rezervation.rezervation_country,model_rezervation_country,,1,1,1,1
+access_rezervation_partners,rezervation.rezervation_partners,model_rezervation_partners,,1,1,1,1
+access_rezervation_user_types,rezervation.rezervation_user_types,model_rezervation_user_types,,1,1,1,1
+access_rezervation_currency,rezervation.rezervation_currency,model_rezervation_currency,,1,1,1,1
+access_rezervation_common_settings,rezervation.rezervation_common_settings,model_rezervation_common_settings,,1,1,1,1

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <menuitem id="rezervation_base_menu"
+              name="Rezervation"
+              sequence="10"/>
+        <menuitem id="rezervation_partners_menu"
+              name="Partners"
+              parent="rezervation_base_menu"
+              action="rezervation_partners_action"/>
+        <menuitem id="rezervation_settings_menu"
+              name="Settings"
+              parent="rezervation_base_menu"/>
+        <menuitem id="rezervation_city_menu"
+              name="Cities"
+              parent="rezervation_settings_menu"
+              action="rezervation_city_action"/>
+        <menuitem id="rezervation_country_menu"
+              name="Country"
+              parent="rezervation_settings_menu"
+              action="rezervation_country_action"/>
+        <menuitem id="rezervation_flats_menu"
+                    name="Flats"
+                    parent="rezervation_base_menu"
+                    action="rezervation_flat_action"/>
+        <menuitem id="rezervation_user_menu"
+                    name="Users"
+                    parent="rezervation_base_menu"
+                    action="rezervation_user_action"/>
+    </data>
+</odoo>
+
+

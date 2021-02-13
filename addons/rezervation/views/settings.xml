@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record id="rezervation_settings_action" model='ir.actions.act_window'>
+        <field name="name">Flat amenities</field>
+        <field name="res_model">rezervation.amenity</field>
+        <field name="view_mode">tree,activity</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the amenity</p>
+        </field>
+    </record>
+
+
+<!--    <record id="rezervation_settings_tree" model="ir.ui.view">-->
+<!--        <field name="name">Amenity.List.tree</field>-->
+<!--        <field name="model">rezervation.amenity</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree string="Amenity_tree">-->
+<!--                <field name="name"/>-->
+<!--                <field name="type" />-->
+<!--                <field name="icon"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="rezervation_amenity_view_form" model="ir.ui.view">-->
+<!--        <field name="name">Amenity</field>-->
+<!--        <field name="model">rezervation.amenity</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <group string="Flat's amenities">-->
+<!--                    <field name="name"/>-->
+<!--                    <field name="type" />-->
+<!--                    <field name="icon" />-->
+<!--                </group>-->
+
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+
+</odoo>

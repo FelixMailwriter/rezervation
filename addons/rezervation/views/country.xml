@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record id="rezervation_country_action" model='ir.actions.act_window'>
+        <field name="name">Country</field>
+        <field name="res_model">rezervation.country</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the country</p>
+        </field>
+    </record>
+
+
+    <record id="rezervation_country_tree" model="ir.ui.view">
+        <field name="name">Country.List.tree</field>
+        <field name="model">rezervation.country</field>
+        <field name="arch" type="xml">
+            <tree string="Country_tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="rezervation_country_view_form" model="ir.ui.view">
+        <field name="name">Country</field>
+        <field name="model">rezervation.country</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Country">
+                    <field name="name"/>
+                </group>
+
+            </form>
+        </field>
+    </record>
+
+
+
+
+</odoo>

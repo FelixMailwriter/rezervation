@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record id="rezervation_flat_action" model='ir.actions.act_window'>
+        <field name="name">Flat details</field>
+        <field name="res_model">rezervation.flat</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the flat</p>
+        </field>
+    </record>
+
+    <record id="rezervation_flat_tree" model="ir.ui.view">
+        <field name="name">Flat.List.tree</field>
+        <field name="model">rezervation.flat</field>
+        <field name="arch" type="xml">
+            <tree string="Flat_tree">
+                <field name="inner_id"/>
+                <field name="city" />
+                <field name="flat_type"/>
+                <field name="rooms_qty"/>
+                <field name="beds_qty" />
+                <field name="area" />
+                <field name="address"/>
+                <field name="manager" />
+                <field name="manager_phone" />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="rezervation_flat_view_form" model="ir.ui.view">
+        <field name="name">Flat</field>
+        <field name="model">rezervation.flat</field>
+        <field name="arch" type="xml">
+            <form>
+                <notebook>
+                    <page string="Features" >
+                        <group col="6">
+                            <group colspan="3" col="4">
+                                <group string="Primary information" colspan="2">
+                                    <field name="inner_id"/>
+                                    <field name="rooms_qty" />
+                                    <field name="flat_type" string="st"/>
+                                    <field name="beds_qty" />
+                                    <field name="area" />
+                                    <field name="min_staying" />
+                                    <field name="floor" />
+                                </group>
+
+                                <group string="Address" colspan="2">
+                                    <field name="city" />
+                                    <field name="district" />
+                                    <field name="address" />
+                                    <field name="site" />
+                                    <field name="manager" />
+                                    <field name="manager_phone" />
+                                </group>
+                            </group>
+
+<!--                            <group colspan="3">-->
+<!--                                <group string="Amenities" >-->
+<!--                                    <field name="amenities" />-->
+<!--                                        <tree editable="bottom">-->
+<!--                                            <field name="amenities.amenity_name"/>-->
+<!--                                            <field name="type"/>-->
+<!--                                            <field name="icon"/>-->
+<!--                                        </tree>-->
+<!--                                </group>-->
+<!--                            </group>-->
+                        </group>
+
+                        <group col="4">
+                            <group colspan="2">
+                                <field name="description" />
+                            </group>
+                        </group>
+                    </page>
+
+                    <page string="How to get">
+                        <group>
+                            <group col="2">
+                                <group colspan="2" col="2">
+                                    <group colspan="1">
+                                        <field name="lat" />
+                                    </group>
+                                    <group colspan="1">
+                                        <field name="lon" />
+                                    </group>
+                                </group>
+
+                                <group colspan="2">
+                                    <field name="how_to_get" />
+                                </group>
+                            </group>
+
+                            <group string="Map" >
+                                <field name="city" />
+                            </group>
+                        </group>
+                    </page>
+
+                    <page string="Payment">
+                        <group string="Payment" >
+                            <field name="standard_price" />
+                            <field name="extra_pay_guest_qty" />
+                            <field name="extra_pay" />
+                            <field name="extra_pay_dimension" />
+                            <field name="breakfast_included" />
+                            <field name="deleted" />
+                        </group>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
+
+
+
+
+
+
+</odoo>
+
